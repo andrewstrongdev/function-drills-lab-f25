@@ -12,7 +12,10 @@
 */
 
 //CODE HERE
-
+function helloWorld() {
+  console.log('Hello, World!');
+}
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -31,6 +34,10 @@
 */
 
 //CODE HERE
+function printName(name) {
+  console.log(name)
+}
+printName('Cameron')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -44,7 +51,10 @@
 */
 
 //CODE HERE
-
+function greeting(name){
+  console.log('Hello, ' +name)
+}
+greeting('Jake')
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -69,6 +79,13 @@
 */
 
 //CODE HERE
+function add(a, b) {
+a = parseInt(a)
+b = parseInt(b)
+return a + b
+}
+let c = add('1', 2)
+console.log(c)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -138,8 +155,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
-
+function nameCheck(name) {
+ switch (name){
+  case "Steven":
+  return "What is up Steven?";
+  break;
+  case "Bryan":
+  return "Hey Bryan!";
+  break;
+  default: 
+  return `Cool name, ${name}`;
+ }
+}
+console.log(nameCheck("Andrew"))
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).

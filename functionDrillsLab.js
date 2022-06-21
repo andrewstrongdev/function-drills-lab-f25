@@ -24,6 +24,8 @@ helloWorld()
 */
 
 //CODE HERE
+const jsNinja = () => 'I am a JavaScript ninja!'
+console.log(jsNinja());
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -68,7 +70,16 @@ greeting('Jake')
 */
 
 //CODE HERE
-
+const compareNums = (param1,param2) => {
+  if (param1 > param2) {
+  return param1
+} else if (param1 < param2) {
+  return param2
+} else if (param1 === param2) {
+  return param1
+}
+}
+console.log(compareNums(2,10))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -101,7 +112,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+ console.log('expression')
 
 
 
@@ -112,11 +123,11 @@ const exclaim = function(str) {
   Uncomment the correct `console.log` underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
 
-// console.log('arrow')
+ console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -126,6 +137,8 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+const exclaimTwo = str => str.toUpperCase() + '!!!'
+
 
 
 
@@ -141,7 +154,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -167,7 +180,8 @@ function nameCheck(name) {
   return `Cool name, ${name}`;
  }
 }
-console.log(nameCheck("Andrew"))
+let nameGreeting = nameCheck("Derek");
+console.log(nameGreeting)
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -180,6 +194,23 @@ console.log(nameCheck("Andrew"))
 
 //CODE HERE
 
+function faveColorFinder(color) {
+switch (color) {
+case 'red': 
+return 'red is a great color';
+break;
+case 'green':
+  return 'green is a solid favorite color';
+  break;
+  case 'black':
+    return 'so trendy'
+    break;
+    default:
+      return 'you need to evaluate your favorite color'
+}
+}
+let colorRating = faveColorFinder("blue")
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -190,6 +221,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames (arr){
+  for (let i = 0; i<arr.length; i++){
+    console.log(arr[i])
+  }
+}
+printAllNames(['joe','boib','swag'])
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -201,6 +238,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function thatsOdd(num1){
+if(num1%2===0){
+  return "That's not odd!"
+} else{
+  return "That is odd indeed!"
+}
+}
+oddChecker = thatsOdd(2)
+console.log(oddChecker)
+
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -214,6 +261,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const bestMoview = (param) => `${param} is the best movie ever!`
+console.log(bestMoview("Toy Story"))
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -228,6 +277,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr) {
+ let answers = [];
+ for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > 100) {
+    answers.push('big')
+} else if (arr[i] <= 100) {
+  answers.push('small')
+  }
+ }
+ arrayEvaluator = answers
+ return arrayEvaluator
+}
+console.log(bigOrSmall([101, 102, 103, 104, 105, 106, 107,5]))
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -239,6 +301,7 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+
 
 
 ////////////////// PROBLEM 17 ////////////////////
